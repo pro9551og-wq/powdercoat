@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional powder coating services for metal parts, gates, railings, furniture and industrial components.">
+<title>XX Powder Coating | Durable Finishes</title>
+<style>
+:root{--ink:#17212b;--muted:#65717d;--accent:#f36b32;--accent2:#ff9b52;--paper:#f5f7f9;--dark:#101820}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e8edf1}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;font-size:1.2rem;letter-spacing:.3px}.brand b{color:var(--accent)}.links{display:flex;gap:24px;align-items:center;font-size:.93rem}.links a:hover{color:var(--accent)}.btn{display:inline-block;background:var(--accent);color:white;padding:12px 19px;border-radius:7px;font-weight:700;border:0;cursor:pointer}.btn:hover{background:#d95420}.btn.outline{background:transparent;border:1px solid #ffffff99;color:#fff}
+.hero{background:linear-gradient(110deg,#101820ed,#101820b8),url('https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff;padding:105px 0 100px}.eyebrow{color:var(--accent2);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.08;max-width:760px;margin:15px 0}.hero p{color:#e1e7eb;max-width:620px;font-size:1.1rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.trust{display:flex;gap:30px;flex-wrap:wrap;margin-top:45px;color:#e8edf1;font-size:.9rem}.trust span:before{content:'✓';color:var(--accent2);font-weight:900;margin-right:8px}
+section{padding:78px 0}.section-head{max-width:680px;margin-bottom:35px}.section-head h2{font-size:clamp(2rem,4vw,2.8rem);line-height:1.15;margin:8px 0 12px}.section-head p,.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #e8edf1;border-radius:12px;padding:25px;box-shadow:0 8px 25px #17212b08}.card .ico{width:46px;height:46px;border-radius:10px;background:#fff0e8;color:var(--accent);display:grid;place-items:center;font-size:1.4rem}.card h3{margin:14px 0 7px}.soft{background:var(--paper)}.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.photo{min-height:390px;border-radius:16px;background:url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85') center/cover}.checks{padding:0;list-style:none}.checks li{margin:12px 0}.checks li:before{content:'✓';color:var(--accent);font-weight:900;margin-right:10px}
+.steps{counter-reset:step}.step{position:relative;padding-left:62px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;background:var(--accent);color:#fff;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.band{background:var(--dark);color:white;padding:55px 0}.band-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.band p{color:#c6d0d8;margin-bottom:0}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px}.contact-item{margin:18px 0}.contact-item small{display:block;color:var(--muted)}form{display:grid;gap:13px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}input,textarea,select{width:100%;padding:14px;border:1px solid #dce3e8;border-radius:7px;font:inherit;background:white}textarea{min-height:120px;resize:vertical}footer{background:#0c141b;color:#c6d0d8;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#fff}
+@media(max-width:800px){.links{display:none}.grid{grid-template-columns:1fr 1fr}.split,.contact-grid{grid-template-columns:1fr}.photo{min-height:280px}.band-inner{display:block}.band .btn{margin-top:20px}}
+@media(max-width:520px){.grid,.fields{grid-template-columns:1fr}.hero{padding:75px 0}.trust{gap:12px;display:grid}.nav{height:66px}}
+
+/* Motion effects */
+html{scroll-behavior:smooth}
+.hero .eyebrow,.hero h1,.hero p,.hero-actions,.trust{animation:riseIn .8s both}
+.hero h1{animation-delay:.12s}.hero p{animation-delay:.22s}
+.hero-actions{animation-delay:.32s}.trust{animation-delay:.42s}
+.card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.card:hover{transform:translateY(-7px);box-shadow:0 18px 38px #17212b18;border-color:#f5b18f}
+.btn{transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 9px 20px #f36b3240}
+.photo{transition:transform .5s ease,filter .5s ease}.map-frame{overflow:hidden;border-radius:14px;border:1px solid #e3e8ec;box-shadow:0 10px 30px #17212b12}
+.photo:hover{transform:scale(1.015);filter:saturate(1.12)}
+.brand b{display:inline-block;animation:brandPulse 2.8s ease-in-out infinite}
+.eyebrow{animation:fadeIn .7s ease both}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes brandPulse{0%,100%{text-shadow:0 0 0 #f36b3200}50%{text-shadow:0 0 15px #f36b3280}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+
+.gallery-photo{height:210px;border-radius:9px;background-position:center;background-size:cover;transition:transform .35s ease}
+.card:hover .gallery-photo{transform:scale(1.025)}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><b>XX</b> POWDER COATING</a>
+  <nav class="links"><a href="#about">About</a><a href="prices.html">Prices</a><a href="#gallery">Photos</a><a href="#location">Location</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="#contact">Get a Quote</a>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">Professional Metal Finishing</div>
+  <h1>A stronger finish.<br>A better first impression.</h1>
+  <p>Reliable powder coating for metal products, with a clean, even finish designed for durability, protection and a great look.</p>
+  <div class="hero-actions"><a class="btn" href="#contact">Request a Free Quote</a><a class="btn outline" href="#services">Explore Services</a></div>
+  <div class="trust"><span>Durable finish</span><span>Multiple colour options</span><span>Domestic & industrial work</span></div>
+</div></section>
+
+<section id="about"><div class="wrap split reveal">
+  <div><div class="eyebrow">About XX Powder Coating</div><h2>Quality coating that works as hard as your product.</h2>
+  <p class="muted">We provide powder coating solutions for metal surfaces, helping improve appearance and add a protective finish. From individual items to larger batches, we focus on preparation, consistent coverage and careful finishing.</p>
+  <ul class="checks"><li>Attention to surface preparation</li><li>Neat and consistent coating</li><li>Colour and finish options</li><li>Enquiries for custom and bulk jobs</li></ul>
+  <a class="btn" href="#contact">Talk to Our Team</a></div>
+  <div class="photo" role="img" aria-label="Metal workshop and finishing work"></div>
+</div></section>
+
+<section class="soft" id="services"><div class="wrap">
+  <div class="section-head reveal"><div class="eyebrow">What We Do</div><h2>Powder coating services</h2><p>Finishing solutions for a wide range of metal products. Tell us what you need coated and we can discuss the right option.</p></div>
+  <div class="grid">
+    <article class="card reveal"><div class="ico">▦</div><h3>Gates & Railings</h3><p class="muted">A refreshed, protective finish for gates, grills, railings and metal boundary work.</p></article>
+    <article class="card reveal"><div class="ico">⌂</div><h3>Furniture & Fixtures</h3><p class="muted">Coating for metal chairs, tables, racks, shelves and interior or outdoor fixtures.</p></article>
+    <article class="card reveal"><div class="ico">⚙</div><h3>Industrial Parts</h3><p class="muted">Finishing for selected machine parts, brackets, enclosures and metal components.</p></article>
+    <article class="card reveal"><div class="ico">▤</div><h3>Automotive Components</h3><p class="muted">Custom coating enquiries for suitable metal automotive and fabrication components.</p></article>
+    <article class="card reveal"><div class="ico">◇</div><h3>Custom Metalwork</h3><p class="muted">One-off and made-to-order metal items. Share a photo or dimensions for assessment.</p></article>
+    <article class="card reveal"><div class="ico">✦</div><h3>Colour & Finish Options</h3><p class="muted">Ask about available shades and finishes, including gloss, matte and textured options.</p></article>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="section-head reveal"><div class="eyebrow">How It Works</div><h2>A simple, careful process</h2><p>Every job is assessed according to the material, condition, size and finish required.</p></div>
+  <div class="grid">
+    <div class="card step reveal"><h3>Share your requirement</h3><p class="muted">Send the item details, quantity, dimensions and preferred colour.</p></div>
+    <div class="card step reveal"><h3>Assessment & preparation</h3><p class="muted">We review the job and prepare suitable surfaces for coating.</p></div>
+    <div class="card step reveal"><h3>Coating & finishing</h3><p class="muted">The coating is applied and cured using an appropriate process.</p></div>
+  </div>
+</div></section>
+
+<section class="soft"><div class="wrap split reveal">
+  <div><div class="eyebrow">Why Choose Us</div><h2>Care in every coat.</h2><p class="muted">A good result starts before the coating is applied. We aim to make the process clear, keep communication straightforward and deliver a finish suited to the job.</p></div>
+  <div class="grid" style="grid-template-columns:1fr 1fr">
+    <div class="card"><h3>Clear quotes</h3><p class="muted">Understand the job scope before work begins.</p></div>
+    <div class="card"><h3>Custom jobs</h3><p class="muted">Discuss special sizes, colours and quantities.</p></div>
+    <div class="card"><h3>Quality focus</h3><p class="muted">Careful preparation and finishing checks.</p></div>
+    <div class="card"><h3>Helpful support</h3><p class="muted">Get updates and answers during your enquiry.</p></div>
+  </div>
+</div></section>
+
+<div class="band"><div class="wrap band-inner"><div><div class="eyebrow">Have a project in mind?</div><h2 style="margin:5px 0">Let's discuss your coating requirement.</h2><p>Send us the details and request a quotation.</p></div><a class="btn" href="#contact">Get in Touch</a></div></div>
+
+
+<section class="soft" id="gallery"><div class="wrap">
+  <div class="section-head reveal"><div class="eyebrow">Our Workshop & Work</div><h2>Take a look around</h2><p>Add real photos of your workshop, powder coating machine, finished products and recent projects here.</p></div>
+  <div class="grid">
+    <div class="card reveal"><div class="gallery-photo" style="background-image:url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=85')"></div><h3>Our Workshop</h3><p class="muted">Replace with your warehouse / workshop photo.</p></div>
+    <div class="card reveal"><div class="gallery-photo" style="background-image:url('https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=900&q=85')"></div><h3>Coating Work</h3><p class="muted">Replace with a photo of your coating process.</p></div>
+    <div class="card reveal"><div class="gallery-photo" style="background-image:url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=85')"></div><h3>Finished Products</h3><p class="muted">Replace with photos of your completed work.</p></div>
+  </div>
+</div></section>
+
+<section id="location"><div class="wrap">
+  <div class="section-head reveal"><div class="eyebrow">Find Us</div><h2>Visit our workshop</h2><p>Our location is shown below. Replace the placeholder address in the map URL and contact details with your exact shop location.</p></div>
+  <div class="map-frame reveal"><iframe title="Google Maps location placeholder" src="https://www.google.com/maps?q=XX%20Area%2C%20XX%20City%2C%20India&output=embed" width="100%" height="360" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <p class="muted">Address: XX Area, XX City, XX State, India</p>
+</div></section>
+<section id="contact"><div class="wrap">
+  <div class="section-head reveal"><div class="eyebrow">Contact Us</div><h2>Request a coating quote</h2><p>Replace the XX details below with your real business information before publishing.</p></div>
+  <div class="contact-grid reveal">
+    <div>
+      <div class="contact-item"><strong>Business name</strong><small>XX Powder Coating</small></div>
+      <div class="contact-item"><strong>Phone / WhatsApp</strong><small>+91 XXXXX XXXXX</small></div>
+      <div class="contact-item"><strong>Email</strong><small>yourname@example.com</small></div>
+      <div class="contact-item"><strong>Address</strong><small>XX Area, XX City, XX State, India</small></div>
+      <div class="contact-item"><strong>Working hours</strong><small>Monday – Saturday: XX AM – XX PM</small></div>
+    </div>
+    <form id="quoteForm">
+      <div class="fields"><input required placeholder="Your name"><input required placeholder="Phone number"></div>
+      <div class="fields"><input type="email" placeholder="Email (optional)"><select><option value="">Service required</option><option>Gates & railings</option><option>Furniture & fixtures</option><option>Industrial parts</option><option>Automotive components</option><option>Other / custom work</option></select></div>
+      <textarea placeholder="Tell us about the item, quantity, size and preferred colour"></textarea>
+      <button class="btn" type="submit">Send Enquiry on WhatsApp</button>
+      <small class="muted">This form opens WhatsApp with your enquiry. Add your real WhatsApp number in the code before using it.</small>
+    </form>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>XX POWDER COATING</strong><br><small>Professional metal finishing</small></div><small>© <span id="year"></span> XX Powder Coating. All rights reserved.</small></div></footer>
+<script>
+
+// Reveal content as it enters the viewport.
+const revealItems = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach(item => revealObserver.observe(item));
+} else {
+  revealItems.forEach(item => item.classList.add('visible'));
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const inputs = this.querySelectorAll('input,select,textarea');
+  const name=inputs[0].value, phone=inputs[1].value, email=inputs[2].value, service=inputs[3].value, details=inputs[4].value;
+  const message=`Hello, I want a powder coating quote.%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AService: ${encodeURIComponent(service)}%0ADetails: ${encodeURIComponent(details)}`;
+  const whatsappNumber='91XXXXXXXXXX'; // Replace with your WhatsApp number, digits only.
+  if(whatsappNumber.includes('X')) { alert('Please add your WhatsApp number in the website code first.'); return; }
+  window.open(`https://wa.me/${whatsappNumber}?text=${message}`,'_blank');
+});
+</script>
+</body></html>
